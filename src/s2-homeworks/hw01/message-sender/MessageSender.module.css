@@ -1,13 +1,35 @@
 .sendForm {
-
+    display: flex;
+    justify-content: space-between;
 }
 
 .textarea {
+    border-radius: 20px;
+    width: 976px;
+    height: 40px;
+    box-shadow: 0 1px 2px 0 rgba(29, 33, 38, 0.1), 0 5px 20px 0 rgba(29, 33, 38, 0.03);
+    background: #f5f7fb;
+    resize: none;
+    overflow: hidden; /* убрать качели */
 
+    padding: 12px 24px;
+
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .button {
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    width: 120px;
+    height: 40px;
+    background-color: #06c;
 
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
 }
 
 .button:hover {

@@ -1,17 +1,88 @@
 .message {
-
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-bottom: 56px; 
 }
 
 .imageAndText {
-
+    display: flex; 
+    margin-left: auto;
 }
 
 .imageAndText img {
-
+    width: 48px;
+    height: 48px;
+    order: 2; /* Устанавливаем порядок для изображения, чтобы оно появилось вторым */
+    margin-top: auto;
 }
 
 .text {
+    margin-left: auto;
+    background-color: #0066CC;
+   /*  background-image: url('../Rectangle\ 3.svg');
+    background-size: cover; 
+    background-position: center;  */
+    width: 100%;
+    height: 60px; 
+   
+    color: #FFFFFF;
 
+    align-items: center;
+
+    min-height: 60px;
+    max-width: 575px;
+    padding: 8px 12px;
+}
+
+.text:after {
+
+}
+
+.name {
+    text-align: right;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 3px;
+
+}
+
+.messageText {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.time {
+    align-self: flex-end; /* Если нужно, чтобы время было справа в сообщении */
+    font-weight: 600;
+    font-size: 10px;
+    color: #000;
+    padding-right: 11px;
+    padding-top: 5px;
+}
+
+/* .message {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+}
+
+.imageAndText {
+    margin-left: auto;
+    max-width: 575px;
+    display: flex; 
+    align-items: center; 
+    
+}
+
+.imageAndText img {
+    width: 48px;
+    height: 48px;
+    
+}
+
+.text {
+   
 }
 
 .text:after {
@@ -27,5 +98,5 @@
 }
 
 .time {
-
-}
+    margin-left: auto;
+} */
