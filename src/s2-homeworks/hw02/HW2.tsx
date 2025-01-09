@@ -19,8 +19,8 @@ import s2 from '../../s1-main/App.module.css'
 // types
 export type AffairPriorityType = 'high' | 'low' | 'middle'// need to fix any
 export type AffairType = {
-    _id: any // need to fix any
-    name: any // need to fix any
+    _id: number // need to fix any
+    name: string // need to fix any
     priority: AffairPriorityType
 }
 export type FilterType = 'all' | AffairPriorityType
@@ -42,18 +42,18 @@ export const filterAffairs = (affairs: AffairType[], filter: FilterType): Affair
 
     return affairs = affairs.filter(t => t.priority === filter); // need to fix
 }
-export const deleteAffair = (affairs: any, _id: any): any => { // need to fix any
-
-    return affairs // need to fix
+export const deleteAffair = (affairs: AffairType[], _id: number): AffairType[] => { // need to fix any
+    return affairs = affairs.filter(t => t._id !== _id); // need to fix
 }
 
 export function HW2() {
-    const [affairs, setAffairs] = useState<any>(defaultAffairs) // need to fix any
+    const [affairs, setAffairs] = useState<Array<AffairType>>(defaultAffairs) // need to fix any
     const [filter, setFilter] = useState<FilterType>('all')
 
     const filteredAffairs = filterAffairs(affairs, filter)
-    const deleteAffairCallback = (_id: any) => { // need to fix any
-        // need to fix
+    const deleteAffairCallback = (_id: number) => { // need to fix any
+        const updatedAffairs = deleteAffair(affairs, _id); // Получаем обновленный массив дел
+        setAffairs(updatedAffairs); // Обновляем состояние affairs
     }
 
     return (
