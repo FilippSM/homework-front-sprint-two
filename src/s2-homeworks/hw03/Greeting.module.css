@@ -2,21 +2,30 @@
 }
 
 .inputAndButtonContainer {
+    display: flex;
 }
 
 .error {
 }
 
 .input {
+    width: 372px;
+    height: 36px;
 }
 
 .input:focus {
+
 }
 
 .errorInput {
+    outline: none;
+    border: 2px solid red;
 }
 
 .button {
+    width: 76px;
+    height: 36px;
+
 }
 
 .button:focus {

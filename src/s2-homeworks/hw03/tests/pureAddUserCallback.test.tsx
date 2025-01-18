@@ -1,10 +1,18 @@
 import React from 'react'
-import {pureAddUserCallback} from '../HW3'
+import {pureAddUserCallback, UserType} from '../HW3'
 
-let initialState: any[]
-const setName = (a: any[]) => {
+let initialState: UserType[];
+/* const setName = (a: UserType[]) => {
     initialState = a
-}
+} */
+
+const setName = (a: UserType[] | ((prevState: UserType[]) => UserType[])) => {
+    if (typeof a === 'function') {
+        initialState = a(initialState); // Вызываем функцию с текущим состоянием
+    } else {
+        initialState = a; // Присваиваем новое состояние
+    }
+};
 
 beforeEach(() => {
     initialState = []
