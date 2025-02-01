@@ -1,8 +1,42 @@
 .burgerMenuIcon {
+    width: 24px;
+    height: 24px;
 }
 
 .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1280px;
+    width: 100%;
+    padding: 0 70px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    height: 60px;
+
+    box-shadow: 0 0 2px 0 rgba(29, 33, 38, 0.1), 0 0 40px 0 rgba(29, 33, 38, 0.13);
+    background: #fff;
+
+
+    position: fixed;
+    /* Закрепляет элемент */
+    top: 0;
+    /* Прикрепляет к верхней части окна */
+    left: 0;
+    /* Выравнивание по левому краю */
+    right: 0;
+    /* Выравнивание по правому краю */
+    z-index: 1000;
+    /* Уровень наложения */
+    background-color: white;
+    /* Цвет фона */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Тень для улучшения визуального эффекта */
 }
 
 .header h1 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #000;
 }
