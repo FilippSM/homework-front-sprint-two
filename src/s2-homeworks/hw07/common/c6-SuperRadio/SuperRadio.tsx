@@ -35,7 +35,29 @@ const SuperRadio: React.FC<SuperRadioPropsType> = ({
     ...restProps
 }) => {
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
-        // делают студенты
+        /*  const selectedValue = e.currentTarget.value;
+ 
+         // Вызываем onChangeOption, если она передана
+         if (onChangeOption) {
+             const selectedOption = options?.find(option => option.id === selectedValue);
+             onChangeOption(selectedOption);
+         }
+ 
+         // Вызываем onChange, если она передана
+         if (onChange) {
+             onChange(e);
+         } */
+        const selectedValue = Number(e.currentTarget.value); // Преобразуем в число
+
+        // Вызываем onChangeOption с id выбранной опции
+        if (onChangeOption) {
+            onChangeOption(selectedValue); // Передаём id выбранной опции
+        }
+
+        // Вызываем onChange, если она передана
+        if (onChange) {
+            onChange(e); // Передаём событие дальше
+        }
     }
 
     const finalRadioClassName = s.radio + (className ? ' ' + className : '')
@@ -43,25 +65,26 @@ const SuperRadio: React.FC<SuperRadioPropsType> = ({
 
     const mappedOptions: any[] = options
         ? options.map((o) => (
-              <label key={name + '-' + o.id} className={s.label}>
-                  <input
-                      id={id + '-input-' + o.id}
-                      className={finalRadioClassName}
-                      type={'radio'}
-                      // name, checked, value делают студенты
-
-                      onChange={onChangeCallback}
-                      {...restProps}
-                  />
-                  <span
-                      id={id + '-span-' + o.id}
-                      {...spanProps}
-                      className={spanClassName}
-                  >
-                      {o.value}
-                  </span>
-              </label>
-          ))
+            <label key={name + '-' + o.id} className={s.label}>
+                <input
+                    id={id + '-input-' + o.id}
+                    className={finalRadioClassName}
+                    type={'radio'}
+                    name={name} // Устанавливаем имя радиокнопок
+                    value={o.id} // Устанавливаем значение
+                    checked={value === o.id} // Проверяем, является ли это выбранной опцией
+                    onChange={onChangeCallback}
+                    {...restProps}
+                />
+                <span
+                    id={id + '-span-' + o.id}
+                    {...spanProps}
+                    className={spanClassName}
+                >
+                    {o.value}
+                </span>
+            </label>
+        ))
         : []
 
     return <div className={s.options}>{mappedOptions}</div>

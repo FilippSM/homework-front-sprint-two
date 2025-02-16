@@ -1,7 +1,17 @@
 .radio {
+   /*  display: flex; */
+   /*  flex-direction: column; */
+/*    gap: 22px; */
+    
 }
+.label input[type=radio] {
+    accent-color: black ;
+    width: 20px;
+    height: 20px;
+ }
 
 .radio::before {
+    
 }
 
 
@@ -9,7 +19,14 @@
 }
 
 .label {
+    display: flex;
+    gap: 11px;
+    
 }
 
 .options {
+    display: flex;
+    flex-direction: column;
+
+    gap: 22px;
 }
