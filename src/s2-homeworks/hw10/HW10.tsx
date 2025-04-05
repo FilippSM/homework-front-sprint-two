@@ -15,12 +15,19 @@ import {Loader} from './Loader'
 
 const HW10 = () => {
     // useSelector, useDispatch // пишет студент
-    const isLoading = false
+    const dispatch = useDispatch();
+    const isLoading = useSelector((state: AppStoreType) => state.loading.isLoading);
 
     const setLoading = () => { // пишет студент // показать крутилку на 1,5 секунд
         // dispatch
 
         // setTimeout
+        dispatch(loadingAC(true));
+
+        // Устанавливаем таймер на 1,5 секунды
+        setTimeout(() => {
+            dispatch(loadingAC(false)); // Сбрасываем состояние загрузки
+        }, 1500);
     }
 
     return (

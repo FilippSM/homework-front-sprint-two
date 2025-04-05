@@ -1,3 +1,18 @@
 .loader {
-    /*свг и/или анимация*/
+    width: 100px; /* Ширина загрузчика */
+    height: 100px; /* Высота загрузчика */
+    background-image: url('../../pictures/Loading.svg'); /* Путь к вашему SVG */
+    background-size: contain; /* Масштабирование изображения */
+    background-repeat: no-repeat; /* Запрет повторения изображения */
+    animation: rotate 1s linear infinite; /* Пример анимации */
+}
+
+/* Пример анимации вращения */
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
