@@ -6,12 +6,13 @@ import HW10 from '../../hw10/HW10'
 // import HW13 from '../../hw13/HW13'
 // import HW14 from '../../hw14/HW14'
 // import HW15 from '../../hw15/HW15'
+import HW11 from './../../hw11/HW11';
 
 function JuniorPlus() {
     return (
         <div id={'hw5-page-junior-plus'}>
             <HW10 />
-            {/*<HW11 />*/}
+            <HW11 />
             {/*<HW12 />*/}
             {/*<HW13 />*/}
             {/*<HW14 />*/}
