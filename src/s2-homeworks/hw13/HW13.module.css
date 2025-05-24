@@ -2,6 +2,10 @@
 }
 
 .responseContainer {
+  display: flex;
+  margin-top: 88px;
+  gap: 88px;
+  align-items: center;
 }
 
 .imageContainer {
@@ -10,13 +14,26 @@
 .image {
 }
 
-.textContainer{
+.textContainer {
 }
 
 .code {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 30px;
+  color: #000;
+  padding-bottom: 12px;
 }
 
 .text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
 }
 .info {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: #000;
 }
