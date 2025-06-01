@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/homework-front-sprint-two/static/css/main.29c2cc27.css",
-    "main.js": "/homework-front-sprint-two/static/js/main.0ff20230.js",
+    "main.css": "/homework-front-sprint-two/static/css/main.b8bbcef5.css",
+    "main.js": "/homework-front-sprint-two/static/js/main.6fcfbd96.js",
     "static/js/787.66cb4309.chunk.js": "/homework-front-sprint-two/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/homework-front-sprint-two/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/200.svg": "/homework-front-sprint-two/static/media/200.96248f7df0dde10e0a82ac30418f50bc.svg",
@@ -15,12 +15,12 @@
     "static/media/checked.svg": "/homework-front-sprint-two/static/media/checked.b75ca55e8759862b4083.svg",
     "index.html": "/homework-front-sprint-two/index.html",
     "static/media/burger.svg": "/homework-front-sprint-two/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
-    "main.29c2cc27.css.map": "/homework-front-sprint-two/static/css/main.29c2cc27.css.map",
-    "main.0ff20230.js.map": "/homework-front-sprint-two/static/js/main.0ff20230.js.map",
+    "main.b8bbcef5.css.map": "/homework-front-sprint-two/static/css/main.b8bbcef5.css.map",
+    "main.6fcfbd96.js.map": "/homework-front-sprint-two/static/js/main.6fcfbd96.js.map",
     "787.66cb4309.chunk.js.map": "/homework-front-sprint-two/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.29c2cc27.css",
-    "static/js/main.0ff20230.js"
+    "static/css/main.b8bbcef5.css",
+    "static/js/main.6fcfbd96.js"
   ]
 }
