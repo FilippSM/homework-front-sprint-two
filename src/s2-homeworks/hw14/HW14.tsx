@@ -39,6 +39,12 @@ const HW14 = () => {
                 // сохранить пришедшие данные
 
                 //
+                if (res?.data) {
+                    setTechs(res.data.techs)
+                }
+                
+            /*     setTechs(res.data.techs) */
+                setLoading(false)
             })
     }
 
@@ -50,6 +56,11 @@ const HW14 = () => {
         // setSearchParams(
 
         //
+        if (value) {
+            setSearchParams({find: value})
+        } else {
+            setSearchParams({})
+        }
     }
 
     useEffect(() => {
